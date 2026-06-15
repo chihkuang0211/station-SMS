@@ -641,12 +641,28 @@ function printStation(key){
   .p-raw{ font-family:monospace; font-size:0.78rem; color:#666; background:#f6f5ef; padding:6px 8px; border-radius:4px; margin-bottom:6px; word-break:break-all; }
   .p-fix-label{ font-weight:700; font-size:0.85rem; margin-top:4px; }
   .p-fix{ font-size:0.88rem; white-space:pre-wrap; margin-top:2px; line-height:1.6; }
+  .p-toolbar{
+    position:sticky; top:0; background:#f6f5ef; padding:10px 0 14px;
+    margin-bottom:10px; border-bottom:1px solid #d8d6cb;
+    display:flex; gap:10px;
+  }
+  .p-btn{
+    padding:10px 18px; border-radius:6px; font-weight:700; font-size:0.9rem;
+    border:1px solid #1c1f1a; cursor:pointer; background:#1c1f1a; color:#f6f5ef;
+    font-family:inherit;
+  }
+  .p-btn.outline{ background:none; color:#1c1f1a; }
   @media print{
     body{ padding:10mm; }
+    .p-toolbar{ display:none; }
   }
 </style>
 </head>
 <body>
+  <div class="p-toolbar">
+    <button class="p-btn outline" onclick="window.close()">← 返回</button>
+    <button class="p-btn" onclick="window.print()">列印 / 存為 PDF</button>
+  </div>
   <h1>${escapeHtml(st.siteName)}　障礙派工歷史紀錄</h1>
   <div class="p-code">站碼：${escapeHtml(st.siteCode||'-')}　／　${escapeHtml(st.siteCodeName||'-')}</div>
   <div class="p-meta-top">共 ${st.records.length} 筆紀錄　／　列印時間：${printedAt}　／　基站隨身參謀 - 王志光 高級工程師 設計</div>
