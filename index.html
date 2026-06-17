@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>基站隨身參謀</title>
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iYmciIGN4PSIzNSUiIGN5PSIzMCUiIHI9IjgwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyYTJmMjQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWMxZjFhIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJzd2VlcCIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNTAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVjNmI0ZiIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzVjNmI0ZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdyIgeD0iLTUwJSIgeT0iLTUwJSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAwJSI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjYiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVNZXJnZT4KICAgICAgICA8ZmVNZXJnZU5vZGUgaW49ImJsdXIiLz4KICAgICAgICA8ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz4KICAgICAgPC9mZU1lcmdlPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgoKICA8IS0tIGJhY2tncm91bmQgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSI5NiIgZmlsbD0idXJsKCNiZykiLz4KCiAgPCEtLSByYWRhciByaW5ncyAtLT4KICA8ZyBzdHJva2U9IiM4YTk1ODAiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iMC41NSI+CiAgICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjgwIi8+CiAgICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjEzMCIvPgogICAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIxODAiLz4KICA8L2c+CgogIDwhLS0gY3Jvc3NoYWlyIGxpbmVzIC0tPgogIDxnIHN0cm9rZT0iIzhhOTU4MCIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjQiPgogICAgPGxpbmUgeDE9IjI1NiIgeTE9IjY2IiB4Mj0iMjU2IiB5Mj0iNDQ2Ii8+CiAgICA8bGluZSB4MT0iNjYiIHkxPSIyNTYiIHgyPSI0NDYiIHkyPSIyNTYiLz4KICA8L2c+CgogIDwhLS0gcmFkYXIgc3dlZXAgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU2LDI1NikiPgogICAgPHBhdGggZD0iTTAgMCBMMCAtMTgwIEExODAgMTgwIDAgMCAxIDEyNy4zIC0xMjcuMyBaIiBmaWxsPSJ1cmwoI3N3ZWVwKSIvPgogIDwvZz4KCiAgPCEtLSBvdXRlciByaW5nIGFjY2VudCAtLT4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjE4MCIgc3Ryb2tlPSIjYjU1MzJiIiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuOSIvPgoKICA8IS0tIHNpZ25hbCBibGlwIC0tPgogIDxjaXJjbGUgY3g9IjM0MCIgY3k9IjE3MCIgcj0iMTEiIGZpbGw9IiNiNTUzMmIiIGZpbHRlcj0idXJsKCNnbG93KSIvPgogIDxjaXJjbGUgY3g9IjM0MCIgY3k9IjE3MCIgcj0iMjIiIHN0cm9rZT0iI2I1NTMyYiIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjUiLz4KCiAgPCEtLSBjZW50ZXIgaHViIC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMTQiIGZpbGw9IiNmNmY1ZWYiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjE0IiBzdHJva2U9IiMxYzFmMWEiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0iI2Y2ZjVlZiIvPgo8L3N2Zz4K">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KICA8ZGVmcz4KICAgIDxyYWRpYWxHcmFkaWVudCBpZD0iYmciIGN4PSIzNSUiIGN5PSIzMCUiIHI9IjgwJSI+CiAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMyYTJmMjQiLz4KICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMWMxZjFhIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPHJhZGlhbEdyYWRpZW50IGlkPSJzd2VlcCIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNTAlIj4KICAgICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVjNmI0ZiIgc3RvcC1vcGFjaXR5PSIwLjk1Ii8+CiAgICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzVjNmI0ZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8L3JhZGlhbEdyYWRpZW50PgogICAgPGZpbHRlciBpZD0iZ2xvdyIgeD0iLTUwJSIgeT0iLTUwJSIgd2lkdGg9IjIwMCUiIGhlaWdodD0iMjAwJSI+CiAgICAgIDxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjYiIHJlc3VsdD0iYmx1ciIvPgogICAgICA8ZmVNZXJnZT4KICAgICAgICA8ZmVNZXJnZU5vZGUgaW49ImJsdXIiLz4KICAgICAgICA8ZmVNZXJnZU5vZGUgaW49IlNvdXJjZUdyYXBoaWMiLz4KICAgICAgPC9mZU1lcmdlPgogICAgPC9maWx0ZXI+CiAgPC9kZWZzPgoKICA8IS0tIGJhY2tncm91bmQgLS0+CiAgPHJlY3Qgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSI5NiIgZmlsbD0idXJsKCNiZykiLz4KCiAgPCEtLSByYWRhciByaW5ncyAtLT4KICA8ZyBzdHJva2U9IiM4YTk1ODAiIGZpbGw9Im5vbmUiIHN0cm9rZS13aWR0aD0iMyIgb3BhY2l0eT0iMC41NSI+CiAgICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjgwIi8+CiAgICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjEzMCIvPgogICAgPGNpcmNsZSBjeD0iMjU2IiBjeT0iMjU2IiByPSIxODAiLz4KICA8L2c+CgogIDwhLS0gY3Jvc3NoYWlyIGxpbmVzIC0tPgogIDxnIHN0cm9rZT0iIzhhOTU4MCIgc3Ryb2tlLXdpZHRoPSIzIiBvcGFjaXR5PSIwLjQiPgogICAgPGxpbmUgeDE9IjI1NiIgeTE9IjY2IiB4Mj0iMjU2IiB5Mj0iNDQ2Ii8+CiAgICA8bGluZSB4MT0iNjYiIHkxPSIyNTYiIHgyPSI0NDYiIHkyPSIyNTYiLz4KICA8L2c+CgogIDwhLS0gcmFkYXIgc3dlZXAgLS0+CiAgPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMjU2LDI1NikiPgogICAgPHBhdGggZD0iTTAgMCBMMCAtMTgwIEExODAgMTgwIDAgMCAxIDEyNy4zIC0xMjcuMyBaIiBmaWxsPSJ1cmwoI3N3ZWVwKSIvPgogIDwvZz4KCiAgPCEtLSBvdXRlciByaW5nIGFjY2VudCAtLT4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjE4MCIgc3Ryb2tlPSIjYjU1MzJiIiBzdHJva2Utd2lkdGg9IjYiIGZpbGw9Im5vbmUiIG9wYWNpdHk9IjAuOSIvPgoKICA8IS0tIHNpZ25hbCBibGlwIC0tPgogIDxjaXJjbGUgY3g9IjM0MCIgY3k9IjE3MCIgcj0iMTEiIGZpbGw9IiNiNTUzMmIiIGZpbHRlcj0idXJsKCNnbG93KSIvPgogIDxjaXJjbGUgY3g9IjM0MCIgY3k9IjE3MCIgcj0iMjIiIHN0cm9rZT0iI2I1NTMyYiIgc3Ryb2tlLXdpZHRoPSIzIiBmaWxsPSJub25lIiBvcGFjaXR5PSIwLjUiLz4KCiAgPCEtLSBjZW50ZXIgaHViIC0tPgogIDxjaXJjbGUgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMTQiIGZpbGw9IiNmNmY1ZWYiLz4KICA8Y2lyY2xlIGN4PSIyNTYiIGN5PSIyNTYiIHI9IjE0IiBzdHJva2U9IiMxYzFmMWEiIHN0cm9rZS13aWR0aD0iMiIgZmlsbD0iI2Y2ZjVlZiIvPgo8L3N2Zz4K">
+<style>
+  :root{
+    --ink:#1c1f1a;
+    --paper:#f6f5ef;
+    --line:#d8d6cb;
+    --rust:#b5532b;
+    --moss:#5c6b4f;
+    --moss-dim:#8a9580;
+    --card:#ffffff;
+    --mono: "JetBrains Mono", "Consolas", monospace;
+    --sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:var(--sans);
+    background:var(--paper);
+    color:var(--ink);
+    -webkit-tap-highlight-color:transparent;
+  }
+  header{
+    padding:18px 16px 14px;
+    border-bottom:2px solid var(--ink);
+    position:sticky; top:0; background:var(--paper); z-index:10;
+  }
+  header h1{
+    margin:0;
+    font-size:1.25rem;
+    letter-spacing:0.06em;
+    font-weight:800;
+  }
+  header h1 .acc{ color:var(--rust); }
+  header .sub{
+    margin-top:4px;
+    font-size:0.75rem;
+    color:var(--moss-dim);
+    font-family:var(--mono);
+    letter-spacing:0.04em;
+  }
+  header .credit{
+    margin-top:2px;
+    font-size:0.7rem;
+    color:var(--moss-dim);
+    font-family:var(--mono);
+    letter-spacing:0.02em;
+  }
+  nav{
+    display:flex;
+    border-bottom:1px solid var(--line);
+    background:var(--paper);
+    position:sticky; top:58px; z-index:9;
+  }
+  nav button{
+    flex:1;
+    padding:10px 4px;
+    border:none;
+    background:none;
+    font-family:var(--sans);
+    font-size:0.85rem;
+    font-weight:700;
+    color:var(--moss-dim);
+    border-bottom:3px solid transparent;
+    cursor:pointer;
+  }
+  nav button.active{
+    color:var(--ink);
+    border-bottom-color:var(--rust);
+  }
+  main{ padding:14px 16px 60px; max-width:720px; margin:0 auto; }
+  .panel{ display:none; }
+  .panel.active{ display:block; }
+
+  /* --- 新增紀錄 --- */
+  textarea{
+    width:100%;
+    min-height:90px;
+    font-family:var(--mono);
+    font-size:0.85rem;
+    padding:10px;
+    border:1px solid var(--line);
+    border-radius:4px;
+    background:var(--card);
+    resize:vertical;
+  }
+  .btn{
+    display:inline-block;
+    padding:10px 18px;
+    border:1px solid var(--ink);
+    background:var(--ink);
+    color:var(--paper);
+    font-weight:700;
+    font-size:0.9rem;
+    border-radius:4px;
+    cursor:pointer;
+    margin-top:8px;
+  }
+  .btn.outline{
+    background:none;
+    color:var(--ink);
+    border-color:var(--ink);
+  }
+  .btn.rust{ background:var(--rust); border-color:var(--rust); }
+  .btn.small{ padding:6px 12px; font-size:0.78rem; margin-top:0;}
+  .row{ display:flex; gap:8px; flex-wrap:wrap; align-items:center;}
+
+  .preview{
+    margin-top:10px;
+    padding:10px;
+    border:1px dashed var(--moss-dim);
+    border-radius:4px;
+    font-size:0.82rem;
+    background:#fbfaf5;
+    font-family:var(--mono);
+    white-space:pre-wrap;
+    line-height:1.6;
+  }
+  .preview b{ color:var(--moss); }
+  .err{ color:var(--rust); font-weight:700; }
+
+  input[type=text]{
+    width:100%; padding:10px; font-size:0.95rem;
+    border:1px solid var(--line); border-radius:4px;
+    background:var(--card); font-family:var(--sans);
+  }
+
+  /* --- 搜尋下拉候選 --- */
+  .dd-item{
+    padding:12px 14px; cursor:pointer; border-bottom:1px solid var(--line);
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .dd-item:last-child{ border-bottom:none; }
+  .dd-item:active{ background:#f0efe9; }
+  .dd-name{ font-weight:800; font-size:0.95rem; }
+  .dd-code{ font-family:var(--mono); font-size:0.72rem; color:var(--moss-dim); }
+  .dd-badge{
+    font-size:0.68rem; font-weight:700; padding:2px 7px; border-radius:10px;
+    background:var(--moss); color:#fff; flex-shrink:0; margin-left:8px;
+  }
+
+  /* --- 選定站標題列 --- */
+  .sv-header{
+    display:flex; align-items:flex-start; justify-content:space-between;
+    border-bottom:2px solid var(--ink); padding-bottom:10px; margin-bottom:14px;
+  }
+  .sv-header h2{ margin:0; font-size:1.2rem; }
+  .sv-code{ font-family:var(--mono); font-size:0.75rem; color:var(--moss-dim); margin-top:2px; }
+  .sv-actions{ display:flex; gap:6px; flex-shrink:0; }
+
+  /* --- 工單手風琴 --- */
+  .wo-list{ }
+  .wo-item{
+    border:1px solid var(--line); border-radius:6px;
+    background:var(--card); margin-bottom:10px; overflow:hidden;
+  }
+  .wo-header{
+    display:flex; align-items:center; gap:8px;
+    padding:12px 14px; cursor:pointer;
+    user-select:none; -webkit-user-select:none;
+  }
+  .wo-header:active{ background:#f0efe9; }
+  .wo-arrow{
+    font-size:0.75rem; color:var(--moss-dim);
+    transition:transform 0.2s; flex-shrink:0; margin-left:auto;
+  }
+  .wo-item.open .wo-arrow{ transform:rotate(90deg); }
+  .wo-net{
+    display:inline-block; font-size:0.65rem; font-weight:800;
+    padding:2px 7px; border-radius:3px; color:#fff; flex-shrink:0;
+  }
+  .wo-net.g4{ background:var(--moss); }
+  .wo-net.g5{ background:var(--rust); }
+  .wo-date{ font-family:var(--mono); font-weight:700; font-size:0.92rem; }
+  .wo-type{ font-size:0.78rem; color:var(--moss); font-weight:700; flex-shrink:0; }
+  .wo-fix-badge{
+    font-size:0.65rem; font-weight:700; padding:2px 6px; border-radius:3px;
+    background:#eef1ea; color:var(--moss); flex-shrink:0;
+  }
+  .wo-body{
+    display:none; padding:0 14px 14px; border-top:1px solid var(--line);
+  }
+  .wo-item.open .wo-body{ display:block; }
+  .wo-raw{
+    font-family:var(--mono); font-size:0.78rem; color:#888;
+    background:#fbfaf5; padding:7px 10px; border-radius:4px;
+    margin:10px 0 8px; white-space:pre-wrap; word-break:break-all;
+  }
+  .wo-meta{ font-size:0.8rem; color:var(--moss); margin-bottom:8px; font-weight:600; }
+  .wo-actions{ display:flex; gap:8px; flex-wrap:wrap; margin-top:10px; }
+  .wo-del{
+    color:var(--rust); background:none; border:none; font-size:0.75rem;
+    text-decoration:underline; cursor:pointer; padding:4px 0; margin-left:auto;
+  }
+  .fix-fields{ margin-top:8px; }
+  .fix-field{ margin-bottom:10px; }
+  .fix-field-label{
+    display:block; font-size:0.78rem; font-weight:800; color:var(--moss);
+    margin-bottom:3px; letter-spacing:0.03em;
+  }
+  .fix-field textarea{
+    width:100%; font-size:16px; font-family:var(--sans);
+    padding:8px 10px; border:1px solid var(--line); border-radius:4px;
+    background:var(--card); resize:none; overflow:hidden; min-height:44px;
+  }
+  .fix-field textarea:focus{ border-color:var(--moss); outline:none; }
+  .saved-fix-fields{ margin-top:8px; }
+  .saved-fix-field{ margin-bottom:8px; }
+  .saved-fix-field .sff-label{
+    font-size:0.75rem; font-weight:800; color:var(--moss); display:block; margin-bottom:2px;
+  }
+  .saved-fix-field .sff-value{
+    font-size:0.88rem; white-space:pre-wrap; line-height:1.6;
+    padding:6px 10px; background:#eef1ea; border-radius:4px;
+    color:var(--ink);
+  }
+  .saved-fix-field .sff-empty{
+    color:#bbb; font-size:0.82rem; padding:4px 10px; display:block;
+  }
+
+  /* --- 設定 --- */
+  .field{ margin-bottom:14px; }
+  .field label{ display:block; font-weight:700; font-size:0.85rem; margin-bottom:4px; }
+  .hint{ font-size:0.78rem; color:var(--moss-dim); margin-top:4px; line-height:1.6;}
+  .empty{
+    text-align:center; padding:40px 10px; color:var(--moss-dim);
+    font-family:var(--mono); font-size:0.85rem;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>基站<span class="acc">隨身</span>參謀</h1>
+  <div class="sub">新城・秀林 / 個人故障歷史資料庫</div>
+  <div class="credit">
+    <span id="liveClock"></span>　／　王志光　高級工程師　設計
+  </div>
+</header>
+
+<nav>
+  <button class="tab-btn active" data-tab="add">＋ 新增</button>
+  <button class="tab-btn" data-tab="search">🔍 查詢</button>
+  <button class="tab-btn" data-tab="data">⚙ 資料</button>
+</nav>
+
+<main>
+
+  <!-- 新增 -->
+  <section class="panel active" id="panel-add">
+    <div class="field">
+      <label>貼上派工簡訊（一行一筆，可貼多行）</label>
+      <div class="hint" style="margin-bottom:6px;">💡 iOS 貼上時電話號碼超連結可能造成換行，系統會自動修正，直接貼上解析即可。</div>
+      <textarea id="smsInput" placeholder="4G範例：4G障礙派工03,X,97227000,0972031,97227LN1-中橫九曲洞,中橫九曲洞,湛開倫,06/12 07:21
+5G範例：5G-障礙派工01,X,98114000,玉里觀音山,06/15 08:30,7116,BASE STATION SERVICE PROB"></textarea>
+    </div>
+    <div class="row">
+      <button class="btn" id="parseBtn">解析並預覽</button>
+    </div>
+    <div id="previewBox"></div>
+  </section>
+
+  <!-- 查詢 -->
+  <section class="panel" id="panel-search">
+    <!-- 層1：搜尋框 + 候選下拉 -->
+    <div id="searchWrap" style="position:relative;">
+      <input type="text" id="searchBox" placeholder="輸入站名或站碼…" autocomplete="off" autocorrect="off" spellcheck="false">
+      <div id="dropdown" style="display:none;position:absolute;top:calc(100% + 4px);left:0;right:0;z-index:50;background:var(--card);border:1px solid var(--line);border-radius:6px;box-shadow:0 4px 12px rgba(0,0,0,0.12);max-height:240px;overflow-y:auto;"></div>
+    </div>
+    <!-- 層2：選定站後顯示工單手風琴 -->
+    <div id="stationView" style="display:none; margin-top:14px;"></div>
+    <!-- 空狀態 -->
+    <div id="searchEmpty" style="display:none;" class="empty"></div>
+  </section>
+
+  <!-- 資料管理 -->
+  <section class="panel" id="panel-data">
+    <div class="field">
+      <label>統計</label>
+      <div class="hint" id="statsBox"></div>
+    </div>
+    <div class="field">
+      <label>備份 / 還原（建議定期匯出存到 pCloud）</label>
+      <div class="row">
+        <button class="btn outline" id="exportBtn">匯出 Excel</button>
+        <button class="btn outline" id="importBtn">匯入 Excel</button>
+        <input type="file" id="importFile" accept=".xlsx,.xls" style="display:none;">
+      </div>
+      <div class="hint">匯入會與現有資料合併（重複的派工紀錄會自動略過）。Excel 可在 Numbers / Excel App 中直接開啟查看，也方便補登修復方式後再匯入。</div>
+    </div>
+    <div class="field">
+      <label>清除全部資料</label>
+      <button class="btn rust" id="clearBtn">清除所有紀錄</button>
+    </div>
+  </section>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+<script>
+const STORAGE_KEY = 'bts_fault_db_v1';
+const FIX_FIELDS = [
+  { key: 'phenomenon', label: '故障現象' },
+  { key: 'basis',      label: '判斷依據' },
+  { key: 'method',     label: '處理方式' },
+  { key: 'material',   label: '更換物料' },
+  { key: 'result',     label: '處理結果' },
+];
+// 從舊的純字串 fix 解析出五個欄位（向下相容）
+function parseLegacyFix(fixStr){
+  const obj = { phenomenon:'', basis:'', method:'', material:'', result:'' };
+  if(!fixStr) return obj;
+  FIX_FIELDS.forEach(f=>{
+    const re = new RegExp(`【${f.label}】([\\s\\S]*?)(?=【|$)`);
+    const m = fixStr.match(re);
+    if(m) obj[f.key] = m[1].trim();
+  });
+  // 如果都空，直接放到 phenomenon
+  const allEmpty = FIX_FIELDS.every(f=>!obj[f.key]);
+  if(allEmpty) obj.phenomenon = fixStr.trim();
+  return obj;
+}
+function fixFieldsToString(fields){
+  return FIX_FIELDS.map(f=>`【${f.label}】${(fields[f.key]||'').trim()}`).join('\n');
+}
+function getFixFields(r){
+  if(r.fixFields) return r.fixFields;
+  if(r.fix) return parseLegacyFix(r.fix);
+  return { phenomenon:'', basis:'', method:'', material:'', result:'' };
+}
+function hasAnyFix(r){
+  const ff = getFixFields(r);
+  return FIX_FIELDS.some(f=>ff[f.key] && ff[f.key].trim());
+}
+
+// ---------- 資料層 ----------
+function loadDB(){
+  try{
+    const raw = localStorage.getItem(STORAGE_KEY);
+    return raw ? JSON.parse(raw) : { stations: {} };
+  }catch(e){ return { stations: {} }; }
+}
+function saveDB(db){
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(db));
+}
+let db = loadDB();
+
+// ---------- 簡訊解析 ----------
+// 4G 範例: 4G障礙派工03,X,97227000,0972031,97227LN1-中橫九曲洞,中橫九曲洞,湛開倫,06/12 07:21
+//   欄位: 類型,X,站碼,站碼別名,站名代碼-站名,站名,派工人員,時間  (8欄)
+// 5G 範例: 5G-障礙派工01,X,98114000,玉里觀音山,06/15 08:30,7116,BASE STATION SERVICE PROB
+//   欄位: 類型,X,站碼,站名,時間,障礙編號,障礙描述  (7欄)
+function parseLine(line){
+  line = line.trim();
+  if(!line) return null;
+  const parts = line.split(',').map(s=>s.trim());
+  if(parts.length < 7){
+    return { error: '欄位數不足（4G需8欄/5G需7欄，目前 ' + parts.length + ' 欄）', raw: line };
+  }
+
+  const faultType = parts[0];
+  const is5G = /5G/i.test(faultType);
+
+  if(is5G){
+    if(parts.length < 7){
+      return { error: '5G格式欄位不足（需 7 欄，目前 ' + parts.length + ' 欄）', raw: line };
+    }
+    const [ , code2, siteCode, siteName, datetime, orderNo, description ] = parts;
+    if(!siteName || !siteCode || !datetime){
+      return { error: '缺少站名 / 站碼 / 時間', raw: line };
+    }
+    return {
+      raw: line, network: '5G',
+      faultType, code2, siteCode, siteName, datetime, orderNo, description,
+      siteAlias: '', siteCodeName: '', worker: '',
+      id: siteCode + '_' + datetime + '_' + faultType
+    };
+  }else{
+    if(parts.length < 8){
+      return { error: '4G格式欄位不足（需 8 欄，目前 ' + parts.length + ' 欄）', raw: line };
+    }
+    const [ , code2, siteCode, siteAlias, siteCodeName, siteName, worker, datetime] = parts;
+    if(!siteName || !siteCode || !datetime){
+      return { error: '缺少站名 / 站碼 / 時間', raw: line };
+    }
+    return {
+      raw: line, network: '4G',
+      faultType, code2, siteCode, siteAlias, siteCodeName, siteName, worker, datetime,
+      orderNo: '', description: '',
+      id: siteCode + '_' + datetime + '_' + faultType
+    };
+  }
+}
+
+// ---------- 新增 / 解析 ----------
+const smsInput = document.getElementById('smsInput');
+const previewBox = document.getElementById('previewBox');
+
+// iOS 貼上時電話號碼超連結會把一行簡訊切成多行
+// 這個函式把欄位數不足的行自動往下合併，直到湊滿或遇到下一筆的起頭
+function mergeLines(raw){
+  const lines = raw.split('\n').map(l=>l.trim()).filter(l=>l);
+  const merged = [];
+  let buf = '';
+  const isMsgStart = l => /^(4G|5G)/i.test(l);
+  const countCommas = l => (l.match(/,/g)||[]).length;
+
+  for(let i=0; i<lines.length; i++){
+    const line = lines[i];
+    if(isMsgStart(line)){
+      if(buf) merged.push(buf);
+      buf = line;
+    } else {
+      if(buf){
+        // 還沒達到最低欄位數(6個逗號=7欄)，繼續合併
+        if(countCommas(buf) < 6){
+          buf = buf + ',' + line;
+        } else {
+          merged.push(buf);
+          buf = isMsgStart(line) ? line : '';
+          if(buf==='') merged.push(line); // 非起頭行單獨保留（讓它顯示錯誤）
+        }
+      } else {
+        merged.push(line);
+      }
+    }
+  }
+  if(buf) merged.push(buf);
+  // 清理合併後可能出現的多餘逗號（尾端逗號、雙逗號）
+  return merged.map(l=>l.replace(/,\s*,/g,',').replace(/,$/,'').trim());
+}
+
+document.getElementById('parseBtn').addEventListener('click', ()=>{
+  const lines = mergeLines(smsInput.value);
+  const results = lines.map(parseLine).filter(r=>r!==null);
+  if(results.length===0){
+    previewBox.innerHTML = '<div class="preview err">沒有可解析的內容。</div>';
+    return;
+  }
+
+  let html = '';
+  let toSave = [];
+  results.forEach(r=>{
+    if(r.error){
+      html += `<div class="preview err">⚠ ${r.error}<br>原始: ${escapeHtml(r.raw)}</div>`;
+    }else{
+      const extraInfo = r.network==='5G'
+        ? `<b>障礙編號：</b>${escapeHtml(r.orderNo)}　<b>障礙描述：</b>${escapeHtml(r.description)}`
+        : `<b>派工：</b>${escapeHtml(r.worker)}　<b>代碼站名：</b>${escapeHtml(r.siteCodeName)}`;
+      html += `<div class="preview">
+        <b>網路：</b>${escapeHtml(r.network)}　<b>站名：</b>${escapeHtml(r.siteName)}　<b>站碼：</b>${escapeHtml(r.siteCode)}${r.siteAlias?'（'+escapeHtml(r.siteAlias)+'）':''}
+        <b>時間：</b>${escapeHtml(r.datetime)}
+        <b>類型：</b>${escapeHtml(r.faultType)}
+        ${extraInfo}
+      </div>`;
+      toSave.push(r);
+    }
+  });
+
+  if(toSave.length>0){
+    html += `<button class="btn" id="confirmSaveBtn">確認存入（${toSave.length} 筆）</button>`;
+  }
+  previewBox.innerHTML = html;
+
+  const confirmBtn = document.getElementById('confirmSaveBtn');
+  if(confirmBtn){
+    confirmBtn.addEventListener('click', ()=>{
+      let added=0, skipped=0;
+      toSave.forEach(r=>{
+        const key = r.siteName; // 主索引：站名
+        if(!db.stations[key]){
+          db.stations[key] = {
+            siteName: r.siteName,
+            siteCode: r.siteCode,
+            siteAlias: r.siteAlias,
+            siteCodeName: r.siteCodeName,
+            records: []
+          };
+        }
+        // 更新站碼資訊（4G資訊較完整，避免被5G空值覆蓋）
+        db.stations[key].siteCode = r.siteCode || db.stations[key].siteCode;
+        if(r.siteAlias) db.stations[key].siteAlias = r.siteAlias;
+        if(r.siteCodeName) db.stations[key].siteCodeName = r.siteCodeName;
+
+        const exists = db.stations[key].records.some(rec=>rec.id===r.id);
+        if(exists){ skipped++; return; }
+        db.stations[key].records.push({
+          id: r.id,
+          datetime: r.datetime,
+          faultType: r.faultType,
+          network: r.network,
+          worker: r.worker || '',
+          orderNo: r.orderNo || '',
+          description: r.description || '',
+          raw: r.raw,
+          fix: ''
+        });
+        added++;
+      });
+      // 排序紀錄（新到舊，依字串時間粗略排序，月/日 視為同年）
+      Object.values(db.stations).forEach(st=>{
+        st.records.sort((a,b)=> compareDatetime(b.datetime, a.datetime));
+      });
+      saveDB(db);
+      previewBox.innerHTML = `<div class="preview"><b>已存入 ${added} 筆</b>${skipped>0 ? '，略過重複 '+skipped+' 筆':''}。</div>`;
+      smsInput.value='';
+      renderStationList();
+    });
+  }
+});
+
+function compareDatetime(a,b){
+  // 格式 MM/DD HH:MM -> 轉成可比較數字
+  const toNum = s=>{
+    const m = s.match(/(\d{1,2})\/(\d{1,2})\s+(\d{1,2}):(\d{1,2})/);
+    if(!m) return 0;
+    return parseInt(m[1])*1000000 + parseInt(m[2])*10000 + parseInt(m[3])*100 + parseInt(m[4]);
+  };
+  return toNum(a) - toNum(b);
+}
+
+function escapeHtml(s){
+  return String(s).replace(/[&<>"']/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function autoResize(ta){
+  ta.style.height = 'auto';
+  ta.style.height = ta.scrollHeight + 'px';
+}
+
+// ---------- 查詢（三層結構）----------
+const searchBox    = document.getElementById('searchBox');
+const dropdown     = document.getElementById('dropdown');
+const stationView  = document.getElementById('stationView');
+const searchEmpty  = document.getElementById('searchEmpty');
+
+let currentKey = null; // 目前選定的基站
+
+// 顯示/隱藏各層
+function showDropdown(){ dropdown.style.display='block'; }
+function hideDropdown(){ dropdown.style.display='none'; }
+function showStationView(){ stationView.style.display='block'; searchEmpty.style.display='none'; }
+function hideStationView(){ stationView.style.display='none'; }
+
+// 搜尋框輸入 → 更新候選清單
+searchBox.addEventListener('input', ()=>{
+  const q = searchBox.value.trim().toLowerCase();
+  if(!q){ hideDropdown(); return; }
+  const keys = Object.keys(db.stations);
+  const matched = keys.filter(k=>{
+    const st = db.stations[k];
+    return st.siteName.toLowerCase().includes(q) || (st.siteCode||'').includes(q) || (st.siteAlias||'').includes(q);
+  }).sort((a,b)=>a.localeCompare(b,'zh-Hant')).slice(0,12);
+
+  if(matched.length===0){
+    dropdown.innerHTML = `<div class="dd-item" style="color:var(--moss-dim);cursor:default;">找不到符合的基站</div>`;
+    showDropdown();
+    return;
+  }
+  dropdown.innerHTML = matched.map(k=>{
+    const st = db.stations[k];
+    return `<div class="dd-item" data-key="${escapeHtml(k)}">
+      <div>
+        <div class="dd-name">${escapeHtml(st.siteName)}</div>
+        <div class="dd-code">${escapeHtml(st.siteCode||'')}${st.siteAlias ? ' ／ '+escapeHtml(st.siteAlias) : ''}</div>
+      </div>
+      <span class="dd-badge">${st.records.length} 筆</span>
+    </div>`;
+  }).join('');
+  showDropdown();
+
+  dropdown.querySelectorAll('.dd-item[data-key]').forEach(el=>{
+    el.addEventListener('click', ()=>{
+      selectStation(el.dataset.key);
+    });
+  });
+});
+
+// 點擊其他地方關閉下拉
+document.addEventListener('click', e=>{
+  if(!e.target.closest('#searchWrap')) hideDropdown();
+});
+
+// 選定基站 → 進入層2（工單手風琴）
+function selectStation(key){
+  currentKey = key;
+  const st = db.stations[key];
+  searchBox.value = st.siteName;
+  hideDropdown();
+  renderStationView(key);
+}
+
+function renderStationView(key){
+  const st = db.stations[key];
+  if(!st){ hideStationView(); return; }
+
+  let html = `<div class="sv-header">
+    <div>
+      <h2>${escapeHtml(st.siteName)}</h2>
+      <div class="sv-code">${escapeHtml(st.siteCode||'')}${st.siteCodeName ? ' ／ '+escapeHtml(st.siteCodeName) : ''}</div>
+    </div>
+    <div class="sv-actions">
+      <button class="btn outline small" id="svPrintBtn">列印 PDF</button>
+      <button class="btn outline small" id="svClearBtn">清除</button>
+    </div>
+  </div>
+  <div class="wo-list" id="woList">`;
+
+  st.records.forEach((r,idx)=>{
+    const netCls = r.network==='5G' ? 'g5' : 'g4';
+    const metaLine = r.network==='5G'
+      ? `障礙編號 ${escapeHtml(r.orderNo||'-')}　${escapeHtml(r.description||'')}`
+      : `派工：${escapeHtml(r.worker||'-')}`;
+    const hasFix = hasAnyFix(r);
+    const ff = getFixFields(r);
+
+    const savedFixHtml = `<div class="saved-fix-fields">`
+      + FIX_FIELDS.map(f=>`
+        <div class="saved-fix-field">
+          <span class="sff-label">【${escapeHtml(f.label)}】</span>
+          ${ff[f.key] ? `<div class="sff-value">${escapeHtml(ff[f.key])}</div>` : `<span class="sff-empty">—</span>`}
+        </div>`).join('')
+      + `</div>`;
+
+    const editFixHtml = `<div class="fix-fields">`
+      + FIX_FIELDS.map(f=>`
+        <div class="fix-field">
+          <span class="fix-field-label">【${escapeHtml(f.label)}】</span>
+          <textarea class="fix-input" data-field="${f.key}" placeholder="（選填）">${escapeHtml(ff[f.key]||'')}</textarea>
+        </div>`).join('')
+      + `</div>
+      <div class="wo-actions"><button class="btn small save-fix" data-idx="${idx}">儲存</button></div>`;
+
+    html += `<div class="wo-item" data-idx="${idx}">
+      <div class="wo-header">
+        <span class="wo-net ${netCls}">${escapeHtml(r.network||'')}</span>
+        <span class="wo-date">${escapeHtml(r.datetime)}</span>
+        <span class="wo-type">${escapeHtml(r.faultType)}</span>
+        ${hasFix ? '<span class="wo-fix-badge">已填修復</span>' : ''}
+        <span class="wo-arrow">▶</span>
+      </div>
+      <div class="wo-body">
+        <div class="wo-meta">${metaLine}</div>
+        <div class="wo-raw">${escapeHtml(r.raw)}</div>
+        ${hasFix
+          ? savedFixHtml + `<div class="wo-actions"><button class="btn outline small edit-fix" data-idx="${idx}">編輯修復方式</button></div>`
+          : editFixHtml
+        }
+        <div class="wo-actions">
+          <button class="wo-del" data-idx="${idx}">刪除這筆紀錄</button>
+        </div>
+      </div>
+    </div>`;
+  });
+
+  html += '</div>';
+  stationView.innerHTML = html;
+  showStationView();
+
+  // 手風琴開合
+  stationView.querySelectorAll('.wo-header').forEach(hdr=>{
+    hdr.addEventListener('click', ()=>{
+      const item = hdr.closest('.wo-item');
+      const wasOpen = item.classList.contains('open');
+      // 收起所有，再展開點選的
+      stationView.querySelectorAll('.wo-item').forEach(i=>i.classList.remove('open'));
+      if(!wasOpen){
+        item.classList.add('open');
+        // 自動調整 textarea 高度
+        item.querySelectorAll('textarea.fix-input').forEach(ta=>{
+          autoResize(ta);
+          ta.addEventListener('input', ()=>autoResize(ta));
+        });
+      }
+    });
+  });
+
+  // 列印
+  document.getElementById('svPrintBtn').addEventListener('click', ()=>printStation(key));
+
+  // 清除選定（回到搜尋）
+  document.getElementById('svClearBtn').addEventListener('click', ()=>{
+    searchBox.value='';
+    hideStationView();
+    currentKey=null;
+  });
+
+  // 儲存修復方式
+  stationView.querySelectorAll('.save-fix').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const idx = parseInt(btn.dataset.idx);
+      const woBody = btn.closest('.wo-body');
+      const fields = {};
+      woBody.querySelectorAll('textarea.fix-input').forEach(ta=>{
+        fields[ta.dataset.field] = ta.value.trim();
+      });
+      st.records[idx].fixFields = fields;
+      st.records[idx].fix = fixFieldsToString(fields);
+      saveDB(db);
+      renderStationView(key);
+      // 重新展開同一個工單
+      setTimeout(()=>{
+        const items = stationView.querySelectorAll('.wo-item');
+        if(items[idx]){
+          items[idx].classList.add('open');
+        }
+      },0);
+    });
+  });
+
+  // 編輯修復方式
+  stationView.querySelectorAll('.edit-fix').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const idx = parseInt(btn.dataset.idx);
+      const backup = st.records[idx].fixFields || parseLegacyFix(st.records[idx].fix||'');
+      st.records[idx].fixFields = null;
+      st.records[idx].fix = '';
+      saveDB(db);
+      renderStationView(key);
+      setTimeout(()=>{
+        const items = stationView.querySelectorAll('.wo-item');
+        if(items[idx]){
+          items[idx].classList.add('open');
+          FIX_FIELDS.forEach(f=>{
+            const ta = items[idx].querySelector(`textarea[data-field="${f.key}"]`);
+            if(ta){ ta.value = backup[f.key]||''; autoResize(ta); }
+          });
+        }
+      },0);
+    });
+  });
+
+  // 刪除
+  stationView.querySelectorAll('.wo-del').forEach(btn=>{
+    btn.addEventListener('click', ()=>{
+      const idx = parseInt(btn.dataset.idx);
+      if(confirm('確定刪除這筆紀錄？')){
+        st.records.splice(idx,1);
+        if(st.records.length===0){
+          delete db.stations[key];
+          saveDB(db);
+          hideStationView();
+          searchBox.value='';
+          currentKey=null;
+          return;
+        }
+        saveDB(db);
+        renderStationView(key);
+      }
+    });
+  });
+}
+
+// 保留舊名稱供 renderStats / tab 切換用（空函式佔位）
+function renderStationList(){ /* 新架構不使用 */ }
+
+
+// ---------- 列印 PDF ----------
+function printStation(key){
+  const st = db.stations[key];
+  if(!st) return;
+
+  const now = new Date();
+  const pad = n=>String(n).padStart(2,'0');
+  const printedAt = `${now.getFullYear()}/${pad(now.getMonth()+1)}/${pad(now.getDate())} ${pad(now.getHours())}:${pad(now.getMinutes())}`;
+
+  let rowsHtml = '';
+  st.records.forEach((r,i)=>{
+    const netTag = r.network ? `[${r.network}] ` : '';
+    const metaLine = r.network==='5G'
+      ? `障礙編號：${r.orderNo||'-'} ／ 障礙描述：${r.description||'-'}`
+      : `派工人員：${r.worker||'-'}`;
+    const ff = getFixFields(r);
+    const fixHtml = FIX_FIELDS.map(f=>`
+      <div class="p-fix-row">
+        <span class="p-fix-label">【${f.label}】</span>
+        <span class="p-fix-val">${ff[f.key] ? escapeHtml(ff[f.key]) : '—'}</span>
+      </div>`).join('');
+    rowsHtml += `
+      <div class="p-record">
+        <div class="p-record-title">${i+1}. ${netTag}${escapeHtml(r.datetime)}　${escapeHtml(r.faultType)}</div>
+        <div class="p-meta">${escapeHtml(metaLine)}</div>
+        <div class="p-raw">原始簡訊：${escapeHtml(r.raw)}</div>
+        <div class="p-fix-section">${fixHtml}</div>
+      </div>`;
+  });
+
+  const printHtml = `<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>${escapeHtml(st.siteName)} - 障礙派工歷史紀錄</title>
+<style>
+  body{ font-family:"Noto Sans TC","PingFang TC","Microsoft JhengHei",sans-serif; color:#1c1f1a; padding:24px; }
+  h1{ font-size:1.4rem; margin:0 0 4px; border-bottom:2px solid #1c1f1a; padding-bottom:8px; }
+  .p-code{ font-family:monospace; font-size:0.85rem; color:#666; margin-bottom:4px; }
+  .p-meta-top{ font-size:0.8rem; color:#888; margin-bottom:16px; }
+  .p-record{ margin-bottom:18px; padding-bottom:12px; border-bottom:1px dashed #ccc; page-break-inside: avoid; }
+  .p-record-title{ font-weight:700; font-size:1rem; margin-bottom:4px; }
+  .p-meta{ font-size:0.85rem; color:#5c6b4f; margin-bottom:4px; }
+  .p-raw{ font-family:monospace; font-size:0.78rem; color:#666; background:#f6f5ef; padding:6px 8px; border-radius:4px; margin-bottom:6px; word-break:break-all; }
+  .p-fix-label{ font-weight:700; font-size:0.85rem; margin-top:4px; }
+  .p-fix{ font-size:0.88rem; white-space:pre-wrap; margin-top:2px; line-height:1.6; }
+  .p-fix-section{ margin-top:8px; }
+  .p-fix-row{ margin-bottom:6px; }
+  .p-fix-label{ font-weight:800; font-size:0.85rem; color:#5c6b4f; display:block; margin-bottom:2px; }
+  .p-fix-val{ font-size:0.88rem; white-space:pre-wrap; line-height:1.6; display:block; padding-left:4px; }
+  .p-toolbar{
+    position:sticky; top:0; background:#f6f5ef; padding:10px 0 14px;
+    margin-bottom:10px; border-bottom:1px solid #d8d6cb;
+    display:flex; gap:10px;
+  }
+  .p-btn{
+    padding:10px 18px; border-radius:6px; font-weight:700; font-size:0.9rem;
+    border:1px solid #1c1f1a; cursor:pointer; background:#1c1f1a; color:#f6f5ef;
+    font-family:inherit;
+  }
+  .p-btn.outline{ background:none; color:#1c1f1a; }
+  @media print{
+    body{ padding:10mm; }
+    .p-toolbar{ display:none; }
+  }
+</style>
+</head>
+<body>
+  <div class="p-toolbar">
+    <button class="p-btn outline" onclick="window.close()">← 返回</button>
+    <button class="p-btn" onclick="window.print()">列印 / 存為 PDF</button>
+  </div>
+  <h1>${escapeHtml(st.siteName)}　障礙派工歷史紀錄</h1>
+  <div class="p-code">站碼：${escapeHtml(st.siteCode||'-')}　／　${escapeHtml(st.siteCodeName||'-')}</div>
+  <div class="p-meta-top">共 ${st.records.length} 筆紀錄　／　列印時間：${printedAt}　／　基站隨身參謀 - 王志光 高級工程師 設計</div>
+  ${rowsHtml}
+</body>
+</html>`;
+
+  const win = window.open('', '_blank');
+  if(!win){
+    alert('無法開啟列印視窗，請允許彈出視窗權限');
+    return;
+  }
+  win.document.open();
+  win.document.write(printHtml);
+  win.document.close();
+  win.onload = ()=>{
+    win.focus();
+    win.print();
+  };
+}
+document.querySelectorAll('.tab-btn').forEach(btn=>{
+  btn.addEventListener('click', ()=>{
+    document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('panel-'+btn.dataset.tab).classList.add('active');
+    if(btn.dataset.tab==='search'){
+      // 若已選定基站，重新渲染
+      if(currentKey && db.stations[currentKey]) renderStationView(currentKey);
+    }
+    if(btn.dataset.tab==='data'){
+      renderStats();
+    }
+  });
+});
+
+// ---------- 資料管理 ----------
+function renderStats(){
+  const stCount = Object.keys(db.stations).length;
+  let recCount = 0, fixCount=0;
+  Object.values(db.stations).forEach(st=>{
+    recCount += st.records.length;
+    fixCount += st.records.filter(r=>hasAnyFix(r)).length;
+  });
+  document.getElementById('statsBox').innerHTML =
+    `基站數：${stCount}　／　障礙紀錄數：${recCount}　／　已填修復方式：${fixCount}`;
+}
+
+document.getElementById('exportBtn').addEventListener('click', ()=>{
+  const rows = [];
+  Object.values(db.stations).forEach(st=>{
+    st.records.forEach(r=>{
+      const ff = getFixFields(r);
+      rows.push({
+        '站名': st.siteName,
+        '站碼': st.siteCode || '',
+        '站碼別名': st.siteAlias || '',
+        '代碼站名': st.siteCodeName || '',
+        '網路': r.network || '',
+        '時間': r.datetime || '',
+        '障礙類型': r.faultType || '',
+        '派工人員': r.worker || '',
+        '障礙編號': r.orderNo || '',
+        '障礙描述': r.description || '',
+        '故障現象': ff.phenomenon || '',
+        '判斷依據': ff.basis || '',
+        '處理方式': ff.method || '',
+        '更換物料': ff.material || '',
+        '處理結果': ff.result || '',
+        '原始簡訊': r.raw || '',
+        '紀錄ID': r.id || ''
+      });
+    });
+  });
+
+  const ws = XLSX.utils.json_to_sheet(rows);
+  ws['!cols'] = [
+    {wch:14},{wch:10},{wch:10},{wch:18},{wch:6},
+    {wch:12},{wch:14},{wch:10},{wch:10},{wch:24},
+    {wch:20},{wch:20},{wch:24},{wch:16},{wch:20},
+    {wch:50},{wch:30}
+  ];
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, '查修紀錄');
+
+  const ts = new Date().toISOString().slice(0,10);
+  XLSX.writeFile(wb, `基站隨身參謀_${ts}.xlsx`);
+});
+
+document.getElementById('importBtn').addEventListener('click', ()=>{
+  document.getElementById('importFile').click();
+});
+document.getElementById('importFile').addEventListener('change', (e)=>{
+  const file = e.target.files[0];
+  if(!file) return;
+  const reader = new FileReader();
+  reader.onload = (evt)=>{
+    try{
+      const data = new Uint8Array(evt.target.result);
+      const wb = XLSX.read(data, {type:'array'});
+      const ws = wb.Sheets[wb.SheetNames[0]];
+      const rows = XLSX.utils.sheet_to_json(ws, {defval:''});
+      if(rows.length===0) throw new Error('沒有資料');
+
+      let added=0, skipped=0;
+      rows.forEach(row=>{
+        const siteName = String(row['站名']||'').trim();
+        const datetime = String(row['時間']||'').trim();
+        const faultType = String(row['障礙類型']||'').trim();
+        if(!siteName || !datetime) return;
+
+        const key = siteName;
+        if(!db.stations[key]){
+          db.stations[key] = {
+            siteName,
+            siteCode: String(row['站碼']||''),
+            siteAlias: String(row['站碼別名']||''),
+            siteCodeName: String(row['代碼站名']||''),
+            records: []
+          };
+        }
+        if(row['站碼']) db.stations[key].siteCode = String(row['站碼']);
+        if(row['站碼別名']) db.stations[key].siteAlias = String(row['站碼別名']);
+        if(row['代碼站名']) db.stations[key].siteCodeName = String(row['代碼站名']);
+
+        const id = String(row['紀錄ID']||'') || (db.stations[key].siteCode + '_' + datetime + '_' + faultType);
+        const exists = db.stations[key].records.find(rec=>rec.id===id);
+        if(exists){
+          // 更新修復方式欄位
+          const ff = {
+            phenomenon: String(row['故障現象']||'').trim(),
+            basis:      String(row['判斷依據']||'').trim(),
+            method:     String(row['處理方式']||'').trim(),
+            material:   String(row['更換物料']||'').trim(),
+            result:     String(row['處理結果']||'').trim(),
+          };
+          if(FIX_FIELDS.some(f=>ff[f.key])){
+            exists.fixFields = ff;
+            exists.fix = fixFieldsToString(ff);
+          }
+          skipped++;
+          return;
+        }
+        const ff = {
+          phenomenon: String(row['故障現象']||'').trim(),
+          basis:      String(row['判斷依據']||'').trim(),
+          method:     String(row['處理方式']||'').trim(),
+          material:   String(row['更換物料']||'').trim(),
+          result:     String(row['處理結果']||'').trim(),
+        };
+        db.stations[key].records.push({
+          id,
+          datetime,
+          faultType,
+          network: String(row['網路']||''),
+          worker: String(row['派工人員']||''),
+          orderNo: String(row['障礙編號']||''),
+          description: String(row['障礙描述']||''),
+          raw: String(row['原始簡訊']||''),
+          fixFields: ff,
+          fix: fixFieldsToString(ff)
+        });
+        added++;
+      });
+
+      Object.values(db.stations).forEach(st=>{
+        st.records.sort((a,b)=> compareDatetime(b.datetime, a.datetime));
+      });
+      saveDB(db);
+      renderStats();
+      alert(`匯入完成：新增 ${added} 筆，略過/更新 ${skipped} 筆`);
+    }catch(err){
+      alert('匯入失敗：檔案格式不正確（' + err.message + '）');
+    }
+    e.target.value='';
+  };
+  reader.readAsArrayBuffer(file);
+});
+
+document.getElementById('clearBtn').addEventListener('click', ()=>{
+  if(confirm('確定要清除所有資料嗎？此操作無法復原，建議先匯出備份。')){
+    db = { stations: {} };
+    saveDB(db);
+    renderStats();
+    alert('已清除所有資料');
+  }
+});
+
+// ---------- 初始化 ----------
+function updateClock(){
+  const now = new Date();
+  const pad = n => String(n).padStart(2,'0');
+  const weekDays = ['日','一','二','三','四','五','六'];
+  const text = `${now.getFullYear()}/${pad(now.getMonth()+1)}/${pad(now.getDate())}（${weekDays[now.getDay()]}）${pad(now.getHours())}:${pad(now.getMinutes())}`;
+  document.getElementById('liveClock').textContent = text;
+}
+updateClock();
+setInterval(updateClock, 1000*30);
+
+renderStationList();
+renderStats();
+</script>
+
+</body>
+</html>
